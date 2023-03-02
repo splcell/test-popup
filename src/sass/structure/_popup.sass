@@ -129,3 +129,75 @@ picture
     z-index: 10
     top: 50px
     left: -62px
+
+//адаптив
+@media (max-width:865px)
+    .popup
+        width: 100%
+        flex-direction: column
+        &__info
+            width: 100%
+        &__info-arrow
+            display: none
+        &__info-img
+            width: 550px
+        &__content-subtitle, &__content-descr
+            max-width: 100%
+        &__content-descr
+            font-size: 16px
+        &__content-text
+            font-size: 14px
+    picture
+        width: 550px
+        top: -10px
+        left: 93px
+
+@media (max-width:650px)
+    .main
+        padding: 0 10px
+    .popup
+        &__info-img
+            width: 450px
+    picture
+        width: 450px
+        top: 35px
+
+@media (max-width:560px)
+    picture
+        left: 6px
+
+@media (max-width:475px)
+    .popup
+        &__info-img
+            width: 100%
+        &__content-text
+            text-align: center
+            line-height: 15px
+        &__content-title
+            margin-bottom: 20px
+        &__content-subtitle
+            margin: 10px 0
+        &__content-descr
+            line-height: 17px
+    picture
+        width: 100%
+        left: -20px
+
+@media (max-width:365px)
+    .popup
+        &__content-title
+            font-size: 18px
+        &__content-subtitle
+            font-size: 16px
+        &__form-btn
+            font-size: 12px
+            line-height: 15px
+        &__form-label
+            font-size: 10px
+        &__info-title
+            font-size: 76px
+
+@media (max-width:320px)
+    picture
+        left: -5px
+        top: 96px
