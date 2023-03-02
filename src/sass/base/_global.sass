@@ -1,0 +1,59 @@
+/* Общие настройки документа */
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+html, body
+    height: 100%
+    
+
+body
+    display: flex
+    flex-direction: column
+    background: #E5E5E5
+
+.main
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-grow: 1
+
+.error
+    position: absolute
+    @extend %main-font
+    font-size: 14px
+    font-weight: 900
+    color: red
+    bottom: -23px
+
+h1
+    @extend %main-font
+
+a
+    text-decoration: none
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd
+    margin: 0
+
+img
+    max-width: 100%
+    display: block
